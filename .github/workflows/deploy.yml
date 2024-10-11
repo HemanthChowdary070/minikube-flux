@@ -33,8 +33,3 @@ jobs:
         run: |
           kubectl config get-contexts
           kubectl get nodes
-
-      # Apply Kubernetes manifests
-      - name: Apply Kubernetes manifests
-        run: |
-          kubectl apply -f clusters/openshift-cluster/flux-system/base
